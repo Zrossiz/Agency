@@ -1,0 +1,124 @@
+.main-title {
+    display: flex;
+    justify-content: center;
+}
+
+.main-title p {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.title-desc {
+    display: flex;
+    justify-content: center;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 760px;
+}
+
+.title-desc p {
+    line-height: 23px;
+    letter-spacing: 1.28px;
+    mix-blend-mode: normal;
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+.wrapper-attract {
+    padding-top: 13%;
+}
+
+.slider-counter {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-counter__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.slider-counter__item {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-counter__item p {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.slider-counter__item--active {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    transform: translateY(10%);
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+}
+
+.slider-counter__item--active p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 2.3px;
+    color: #FFFFFF;
+}
+
+.slider-counter__item--active::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #4CAF50;
+    width: 10px;
+    height: 2px;
+    top: 48%;
+    left: -2px;
+}
+
+.slider-counter__item--active::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #4CAF50;
+    width: 40px;
+    height: 2px;
+    z-index: -1;
+    top: 48%;
+}
+
+.slider-counter__item:not(:last-child) {
+    margin-right: 20px;
+}

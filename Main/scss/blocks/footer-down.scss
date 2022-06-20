@@ -1,0 +1,16 @@
+.footer-down{
+    display: flex;
+    justify-content: center;
+    background-color: #252525;
+
+    & p {
+        font-family: 'Oswald';
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0.8px;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+
+}

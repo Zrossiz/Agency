@@ -1,0 +1,156 @@
+.team {
+    padding: 9%;
+    background-color: #FBFBFB;
+}
+
+.team__title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 70px;
+}
+
+.team__title::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #252525;
+}
+
+.team__title p{
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 3.072px;
+    color: #252525;
+    margin-bottom: 5%;
+}
+
+.team__item {
+    position: relative;
+    width: 30%;
+    height: 398px;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+
+.item__name {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    height: 100%;
+    z-index: 2;
+
+    & p {
+        z-index: 3;
+    }
+
+}
+
+.item__name::before {
+    content: '';
+    position: absolute;
+    height: 55px;
+    width: 100%;
+    background: #FFFFFF;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.team__item a {
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1.1px;
+    color: #252525;
+    text-transform: uppercase;
+}
+
+.item__photo {
+    position: absolute;
+    top: 0;
+}
+
+.item__position {
+    z-index: 4;
+    padding-top: 25px;
+    margin: 0;
+}
+
+.item__position p {
+    font-family: 'Oswald';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1.1px;
+    color: #252525;
+    text-transform: none;
+    text-align: center;
+    margin: 0;
+}
+
+.item__desc {
+    z-index: 4;
+}
+
+.item__desc p {
+    font-family: 'OpenSans';
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #777777;
+}
+
+.team__item--active::before{
+    content: '';
+    position: absolute;
+    width: 370px;
+    height: 155px;
+    left: 0;
+    bottom: 0;
+    background: #FFFFFF;
+    opacity: 0.92;
+    z-index: 1;
+}
+
+.team__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+}
+
+.item__name--active {
+    position: relative;
+    text-align: center;
+    z-index: 4;
+
+    p {
+        margin: 0;
+    }
+
+    ::before {
+        content: '';
+        position: absolute;
+        width: 45px;
+        height: 2px;   
+        top: 120%;
+        left: 43%;
+        border-bottom: 2px solid #252525;
+    }
+
+}
+

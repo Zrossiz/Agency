@@ -1,0 +1,101 @@
+.attract {
+    display: flex;
+    justify-content: space-between;
+    width: 1172px;
+    height: 559px;
+    margin: 100px auto;
+}
+
+.title-container {
+    position: relative;
+    width: 322px;
+    padding-top: 30px;
+}
+
+.title-container::before {
+    content: '';
+    position: absolute;
+    width: 309px;
+    height: 391px;
+    background-image: url(../img/face-window.png);
+    background-repeat: no-repeat;
+    top: -15px;
+    right: -193px;
+    z-index: 2;
+}
+
+.title-we p {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    letter-spacing: 2.304px;
+    color: #333333
+}
+
+.title-sqwd {
+    z-index: 3;
+}
+
+.title-sqwd p {
+    font-family: 'OpenSans';
+    font-size: 42px;
+    line-height: 49px;
+    letter-spacing: 2.688px;
+    color: #504E4E;
+}
+
+.title-text {
+    position: relative;
+    width: 311px;
+    padding-left: 21px;
+    z-index: 3;
+}
+
+.title-text::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 14px;
+    border-bottom: 2px solid #353535;
+}
+
+.title-text p {
+    font-family: 'OpenSans';
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1.26px;
+    color: #5B5858;
+    padding-left: 30px;
+}
+
+.desc-container {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+}
+
+.desc-container::after {
+    content: '';
+    position: absolute;
+    width: 309px;
+    height: 418px;
+    left: -445px;
+    top: 47px;
+    opacity: 0.8;
+    background-color: #4CAF50;
+}
+
+.desc-container::before {
+    content: '';
+    position: absolute;
+    height: 391px;
+    width: 309px;
+    background-image: url(../img/meh.png);
+    background-repeat: no-repeat;
+    top: 153px;
+    left: -235px;
+    z-index: -1;
+}

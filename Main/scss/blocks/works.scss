@@ -1,0 +1,248 @@
+.works {
+    display: flex;
+    width: 1185px;
+    margin: 170px auto;
+    position: relative;
+}
+
+.works__title {
+    position: relative;
+    display: inline-block;
+    padding-top: 45px;
+    padding-left: 6px;
+}
+
+.works__title::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #252525;
+}
+
+.works__item {
+    padding-right: 41px;
+}
+
+.works__title p{
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 3.072px;
+    color: #252525;
+    margin-bottom: 5%;
+}
+
+.works__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.works__item a {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.832px;
+    color: #252525;
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+.works__item--active a {
+    opacity: 1;
+}
+
+.works__content-item {
+    width: 584px;
+    padding-bottom: 140px;
+}
+
+.works__content-title {
+    font-family: 'Oswald';
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: 3px;
+    color: #252525;
+    padding-top: 262px;
+}
+
+.works__content-name {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    letter-spacing: 1px;
+    color: #252525;
+    padding-top: 20px;
+}
+
+.works__content-text {
+    font-size: 13px;
+    line-height: 23px;
+    text-align: right;
+    letter-spacing: 0.8px;
+    color: #C2C2C2;
+}
+
+.works__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 100px;
+}
+
+.works__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.works__nav {
+    display: inline-block;
+}
+
+.works__vertical-first {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.works__vertical-second {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.macbook {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 455px;
+        height: 444px;
+        background-image: url(../img/macbook.png);
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+
+.cat {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 455px;
+        height: 444px;
+        background-image: url(../img/cat.png);
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}
+
+.photo {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/photo.png); 
+        background-repeat: no-repeat;
+        top: 0;
+        right: 0;
+        width: 455px;
+        height: 444px;
+        z-index: -1;
+    }
+}
+
+.imac {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/imac.png); 
+        background-repeat: no-repeat;
+        top: 0;
+        right: 0;
+        width: 455px;
+        height: 444px;
+        z-index: -1;
+    }
+}
+
+.left-name {
+    text-align: center;
+}
+
+.left-text {
+    text-align: center;
+}
+
+.left-title {
+    text-align: right;
+}
+
+.works__content-read {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 55px;
+        height: 3px;
+        border-bottom: 2px solid #70BF73;
+        z-index: -1;
+        left: 42.5%;
+        top: 27%;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 55px;
+        height: 3px;
+        border-bottom: 2px solid #70BF73;
+        z-index: 2;
+        left: 48%;
+        top: 27%;
+    }
+
+}
+
+.works__content-read a{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.8px;
+    color: #252525;
+}
+
+.works__link-view {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    & a {
+        text-decoration: none;
+        font-family: 'Oswald';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        color: #252525
+    }
+
+}   
